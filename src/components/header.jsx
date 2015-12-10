@@ -6,7 +6,7 @@ const HeaderNav = () =>(
   <Navbar inverse fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="https://http://n7best.github.io/react-weui-page/">React-WeUI</a>
+        <a href="http://n7best.github.io/react-weui-page/">React-WeUI</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
