@@ -10,7 +10,7 @@ const ComponentsMain = (props) => (
       <Row>
         <Col sm={2} md={2} className="sidebar">
           <Nav className="nav-sidebar">
-            <NavItem eventKey={1} href="/#/components/button">Button</NavItem>
+            <NavItem eventKey={1} href="#/components/button">Button</NavItem>
           </Nav>
         </Col>
         <Col sm={9} smOffset={3} md={10} mdOffset={2} className="main">
