@@ -1,0 +1,13 @@
+import React from 'react';
+//读取组件
+import Button from 'n7-react-weui/lib/button';
+
+//创建一个自定义迷你绿色按钮
+const CustomButton = () => {
+
+  return (
+        <Button type="primary" mini>按钮</Button>
+  );
+}
+
+export default CustomButton;
