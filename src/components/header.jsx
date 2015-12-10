@@ -12,8 +12,8 @@ const HeaderNav = () =>(
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
-        <NavItem eventKey={1} href="/#/install">Installation</NavItem>
-        <NavItem eventKey={1} href="/#/components">Components</NavItem>
+        <NavItem eventKey={1} href="#/install">Installation</NavItem>
+        <NavItem eventKey={1} href="#/components">Components</NavItem>
         <NavItem eventKey={2} href="https://github.com/n7best/react-weui">Github</NavItem>
       </Nav>
     </Navbar.Collapse>
