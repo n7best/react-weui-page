@@ -1,0 +1,13 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Cells/> <CheckboxCell/>
+// ---------------------------------------
+
+<Page title="CheckboxCell示范">
+  <Cells title="复选列表项" split checkbox>
+      <CheckboxCell name="cb1" label="默认选择" checked/>
+      <CheckboxCell name="cb2" label="非默认选择" />
+  </Cells>
+</Page>

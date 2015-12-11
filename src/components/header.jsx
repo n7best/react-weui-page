@@ -2,6 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Nav, MenuItem, Navbar, NavDropdown, NavItem} from 'react-bootstrap';
 import { Link } from 'react-router';
+
+var lang = {
+  ch:{
+    'home':'主页',
+    'installation':'开始使用',
+    'components':'基础组件',
+  },
+  en:{
+    'installation':'Installation',
+    'components':'Components',
+  }
+};
+
+var currentlang = 'ch';
+
 const HeaderNav = () =>(
   <Navbar inverse fixedTop>
     <Navbar.Header>
@@ -12,9 +27,10 @@ const HeaderNav = () =>(
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
-        <NavItem eventKey={1} href="#/install">Installation</NavItem>
-        <NavItem eventKey={1} href="#/components">Components</NavItem>
-        <NavItem eventKey={2} href="https://github.com/n7best/react-weui">Github</NavItem>
+        <NavItem eventKey={1} href="#">{lang[currentlang].home}</NavItem>
+        <NavItem eventKey={2} href="#/install">{lang[currentlang].installation}</NavItem>
+        <NavItem eventKey={3} href="#/components">{lang[currentlang].components}</NavItem>
+        <NavItem eventKey={4} href="https://github.com/n7best/react-weui">Github</NavItem>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

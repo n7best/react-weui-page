@@ -1,0 +1,12 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Cells/> <SwitchCell/>
+// ---------------------------------------
+
+<Page title="SwitchCell示范">
+  <Cells title="开关列表项">
+    <SwitchCell name="switch1" id="sw1" label="标题文字" />
+  </Cells>
+</Page>

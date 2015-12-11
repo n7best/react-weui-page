@@ -1,0 +1,23 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Cells/> <Cell/> <CellHeader/>
+//          <CellBody/> <CellFooter/>
+// ---------------------------------------
+
+<Page title="Cells">
+  <Cells 
+    /* 带标题和底部文字的Cells */
+    title="标题文字"
+    tips="底部文字">
+      <Cell>
+        <CellBody>自定义Cell</CellBody>
+        <CellFooter>说明文字</CellFooter>
+      </Cell>
+      <Cell>
+        <CellBody>自定义Cell</CellBody>
+        <CellFooter>说明文字</CellFooter>
+      </Cell>
+  </Cells>
+</Page>

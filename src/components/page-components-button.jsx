@@ -1,6 +1,7 @@
 import React from 'react';
 import Playground from 'component-playground';
 import Button from 'n7-react-weui/lib/button';
+import Page from 'n7-react-weui/lib/page';
 
 var componentExample = require("!!raw!../examples/button.example");
 
@@ -15,14 +16,14 @@ var descCh = {
 };
 
 const ButtonPage = () => (
-  <div>
-    <h1>Button 按钮</h1>
+  <div className="componentDetail">
+    <h1 className="comptitle">Button 按钮</h1>
     <div className="component-documentation">
       <Playground
       docClass={Button}
       propDescriptionMap={descCh}
       codeText={componentExample}
-      scope={{React: React, Button: Button}} />
+      scope={{React: React, Page:Page, Button: Button}} />
     </div>
   </div>
 );

@@ -1,0 +1,30 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Cells/> <InputCell/> <ButtonArea/>
+//          <Button/>
+// ---------------------------------------
+
+<Page title="表单示范">
+  <Cells title="表单" form>
+    <InputCell type="number" label="QQ" placeholder="请输入qq号" />
+
+    <InputCell type="text" label="验证码" placeholder="请输入验证码"
+      vcode="http://weui.github.io/weui/images/vcode.jpg"/>
+
+    <InputCell type="number" label="银行卡" placeholder="请输入银行卡号" />
+
+    <InputCell type="text" label="验证码" placeholder="请输入验证码"
+      vcode="http://weui.github.io/weui/images/vcode.jpg" error/>
+  </Cells>
+
+  <Cells title="时间" form>
+    <InputCell type="date" label="日期" />
+    <InputCell type="datetime-local" label="时间" />
+  </Cells>
+
+  <ButtonArea>
+    <Button type="primary">确定</Button>
+  </ButtonArea>
+</Page>

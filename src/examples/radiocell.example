@@ -1,0 +1,13 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <RadioCells/> <RadioCell/>
+// ---------------------------------------
+
+<Page title="RadioCells示范">
+  <RadioCells  name='danxuan' value='1' title="单选项">
+    <RadioCell label='radio cell 1' value='1'/>
+    <RadioCell label='radio cell 2' value='2'/>
+  </RadioCells>
+</Page>

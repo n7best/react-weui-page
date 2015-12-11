@@ -1,0 +1,40 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Cells/> <Cell/> <Select />
+//          <InputCell/> <CellHeader/> <CellBody/>
+//          <CellFooter/>
+// 已定义函数:
+//  selectdata = [
+//    {value:"1", label:"选择1"},
+//    {value:"2", label:"选择2"},
+//    {value:"3", label:"选择3"},
+//    {value:"4", label:"选择4"}
+//  ];
+// ---------------------------------------
+
+<Page title="Select 示范">
+  <Cells title="选择项">
+    <InputCell
+      header={<Select data={selectdata} value="1"/>}
+      name="selecttext"
+      type="text"
+      id="selecttext"
+      placeholder="前置选择"
+      selectBefore/>
+
+    <Cell select>
+      <CellBody>
+        <Select data={selectdata} value="1" />
+      </CellBody>
+    </Cell>
+
+    <Cell selectAfter>
+      <CellHeader>后置选择</CellHeader>
+      <CellBody>
+        <Select data={selectdata} value="1"/>
+      </CellBody>
+    </Cell>
+  </Cells>
+</Page>

@@ -1,0 +1,37 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Cells/> <Cell/> <CellHeader/>
+//          <CellBody/> <CellFooter/> <Icon/>
+// ---------------------------------------
+
+<Page title="Cell示范">
+  <Cells title="带说明的列表项">
+      <Cell>
+        <CellBody>自定义Cell</CellBody>
+        <CellFooter>说明文字</CellFooter>
+      </Cell>
+      <Cell>
+        <CellBody>自定义Cell</CellBody>
+        <CellFooter>说明文字</CellFooter>
+      </Cell>
+  </Cells>
+
+  <Cells title="带图标、说明、跳转的列表项" access>
+    <Cell>
+      <CellHeader>
+        <Icon />
+      </CellHeader>
+      <CellBody>标题文字</CellBody>
+      <CellFooter>说明文字</CellFooter>
+    </Cell>
+    <Cell>
+      <CellHeader>
+        <Icon />
+      </CellHeader>
+      <CellBody>标题文字</CellBody>
+      <CellFooter>说明文字</CellFooter>
+    </Cell>
+  </Cells>
+</Page>
