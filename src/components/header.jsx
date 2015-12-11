@@ -8,6 +8,7 @@ var lang = {
     'home':'主页',
     'installation':'开始使用',
     'components':'基础组件',
+    'preview':'预览'
   },
   en:{
     'installation':'Installation',
@@ -30,6 +31,7 @@ const HeaderNav = () =>(
         <NavItem eventKey={1} href="#">{lang[currentlang].home}</NavItem>
         <NavItem eventKey={2} href="#/install">{lang[currentlang].installation}</NavItem>
         <NavItem eventKey={3} href="#/components">{lang[currentlang].components}</NavItem>
+        <NavItem eventKey={4} href=" http://n7best.github.io/react-weui/">{lang[currentlang].preview}</NavItem>
         <NavItem eventKey={4} href="https://github.com/n7best/react-weui">Github</NavItem>
       </Nav>
     </Navbar.Collapse>
