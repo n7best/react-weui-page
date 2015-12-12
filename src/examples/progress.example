@@ -1,0 +1,24 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Progress/>
+// ---------------------------------------
+
+<Page title="Progress" className="progress">
+  <Progress>
+    <i className="weui_icon_cancel"></i>
+  </Progress>
+  <br/>
+  <Progress percent={50}>
+    <i className="weui_icon_cancel"></i>
+  </Progress>
+  <br/>
+  <Progress percent={80}>
+    <i className="weui_icon_cancel"></i>
+  </Progress>
+  <br/>
+  <Progress percent={100}>
+    <i className="weui_icon_success"></i>
+  </Progress>
+</Page>

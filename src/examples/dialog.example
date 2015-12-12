@@ -1,0 +1,42 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Dialog/> <Button/>
+// ---------------------------------------
+// ! demo效果内嵌配置和function,使用请定义在render外
+// 不推荐内嵌到这里 !
+
+<Page title="Dialog对话框">
+  <Button type="primary"
+  onClick={ (e)=>{
+    let dialog=this.refs.dialog1;
+    dialog.setState({show: !dialog.state.show});
+  }}>
+    点击弹出对话框
+  </Button>
+
+  <Dialog title="弹窗标题" ref="dialog1" type="confirm"
+    actions={
+      [
+        {
+          label:"取消",
+          onClick: (e)=>{
+           let dialog=this.refs.dialog1;
+           dialog.setState({show: !dialog.state.show});
+          }
+        },
+        {
+          label:"确定",
+          primary:true,
+          onClick: (e)=>{
+           alert('您点击了确认');
+           let dialog=this.refs.dialog1;
+           dialog.setState({show: !dialog.state.show});
+          }
+        }
+      ]
+    }>
+    自定义弹窗内容<br/>...
+  </Dialog>
+</Page>

@@ -1,0 +1,39 @@
+// ---------------------------------------
+// React-WeUI 实时编辑试验区
+//
+// 核心组件 : <Page/>
+// 可用组件 : <Actionsheet/> <Button/>
+// ---------------------------------------
+// ! demo效果内嵌配置和function,使用请定义在render外
+// 不推荐内嵌到这里 !
+
+<Page title="Actionsheet">
+  <Button
+  type="primary"
+  onClick={(e)=>{
+    let as1 = this.refs.as1;
+    as1.setState({show:!as1.state.show});
+  }}>
+    点击上拉ActionSheet
+  </Button>
+  <Actionsheet ref="as1" 
+  actions={[
+    {
+      label:"取消",
+      onClick: (e)=>{
+        let as1 = this.refs.as1;
+        as1.setState({show:!as1.state.show});
+      }
+    },
+  ]}
+  menus={[
+      {label:"示例菜单",onClick:()=>alert('点击菜单')},
+      {label:"示例菜单",onClick:()=>alert('点击菜单')},
+      {label:"示例菜单",onClick:()=>alert('点击菜单')},
+      {label:"示例菜单",onClick:()=>alert('点击菜单')}
+  ]}
+  onMaskClick={(e)=>{
+    let as1 = this.refs.as1;
+    as1.setState({show:!as1.state.show});
+  }}/>
+</Page>

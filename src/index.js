@@ -13,6 +13,12 @@ import RadioCellPage from './components/page-components-radiocell';
 import CheckboxCellPage from './components/page-components-checkboxcell';
 import FormPage from './components/page-components-form';
 import SelectPage from './components/page-components-select';
+import ToastPage from './components/page-components-toast';
+import DialogPage from './components/page-components-dialog';
+import ProgressPage from './components/page-components-progress';
+import MsgPage from './components/page-components-msgpage';
+import ArticlePage from './components/page-components-article';
+import ActionsheetPage from './components/page-components-actionsheet';
 
 const App = () => (
     <Router>
@@ -30,6 +36,12 @@ const App = () => (
         <Route path="/components/checkboxcell" component={ CheckboxCellPage } />
         <Route path="/components/form" component={ FormPage } />
         <Route path="/components/select" component={ SelectPage } />
+        <Route path="/components/toast" component={ ToastPage } />
+        <Route path="/components/dialog" component={ DialogPage } />
+        <Route path="/components/progress" component={ ProgressPage } />
+        <Route path="/components/msgpage" component={ MsgPage } />
+        <Route path="/components/article" component={ ArticlePage } />
+        <Route path="/components/actionsheet" component={ ActionsheetPage } />
       </Route>
     </Router>
 );
